@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/Task2/BasicValidation.js" defer></script>
+        <title>Basic Validation</title>
+            <style>
+        *{
+            background-color: rgb(225, 218, 218);
+        }
+        h1{
+            text-align: center;
+        }
+        form{
+            text-align: center;
+            display:flex;
+            flex-direction: column;
+            margin: 30px;
+           
+        }
+        label{
+            padding: 20px;
+            font-weight: bold;
+        }
+        input{
+            width: 200px;
+            height: 25px;
+            margin-left:20px ;
+            border: 1px rgb(152, 151, 151) solid;
+        }
+        button{
+            background-color: rgb(72, 72, 255);
+            border-radius: 20px;
+            width: 120px;
+            height: 40px;
+           color: aliceblue;
+           border-style: none ;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="practiceForm">
+    <div>
+        <input type="text" name="firstName" placeholder="First Name">
+        <small class="error-msg" id="fNameError"></small>
+    </div>
+    
+    <div>
+        <input type="text" name="lastName" placeholder="Last Name">
+        <small class="error-msg" id="lNameError"></small>
+    </div>
+    
+    <div>
+        <input type="email" name="userEmail" placeholder="Email">
+        <small class="error-msg" id="emailError"></small>
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
+
+<style>
+    .error-msg { color: red; display: block; height: 15px; font-size: 12px; }
+</style>
+</body>
+</html>

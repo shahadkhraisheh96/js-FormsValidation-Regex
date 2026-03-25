@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="/Task3/RegexValidation.js" defer></script>
+    <title>Regex Validation</title>
+    <style>
+        *{
+            background-color: rgb(225, 218, 218);
+        }
+        h1{
+            text-align: center;
+        }
+        form{
+            text-align: center;
+            display:flex;
+            flex-direction: column;
+            margin: 30px;
+           
+        }
+        label{
+            padding: 20px;
+            font-weight: bold;
+        }
+        input{
+            width: 200px;
+            height: 25px;
+            margin-left:20px ;
+            border: 1px rgb(152, 151, 151) solid;
+        }
+        button{
+            background-color: rgb(72, 72, 255);
+            border-radius: 20px;
+            width: 120px;
+            height: 40px;
+           color: aliceblue;
+           border-style: none ;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="regexForm">
+    <div>
+        <input type="text" name="userEmail" placeholder="Email">
+        <small id="emailError" class="error"></small>
+    </div>
+
+    <div>
+        <input type="text" name="userMobile" placeholder="Mobile (10 digits)">
+        <small id="mobileError" class="error"></small>
+    </div>
+
+    <button type="submit">Validate & Submit</button>
+</form>
+
+<style>
+    .error { color: red; display: block; font-size: 12px; margin-bottom: 10px; }
+</style>
+</body>
+</html>
