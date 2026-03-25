@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="/Task1/BasicFormHandling.js" defer></script>
+    <title>Basic Form Handling</title>
+    <style>
+        *{
+            background-color: rgb(225, 218, 218);
+        }
+        h1{
+            text-align: center;
+        }
+        form{
+            text-align: center;
+            display:flex;
+            flex-direction: column;
+            margin: 30px;
+           
+        }
+        label{
+            padding: 20px;
+            font-weight: bold;
+        }
+        input{
+            width: 200px;
+            height: 25px;
+            margin-left:20px ;
+            border: 1px rgb(152, 151, 151) solid;
+        }
+        button{
+            background-color: rgb(72, 72, 255);
+            border-radius: 20px;
+            width: 120px;
+            height: 40px;
+           color: aliceblue;
+           border-style: none ;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Basic Info Form </h1>
+    <form id="user-info" >
+        <label for="fName">First Name
+            <input type="text" id="fName"  placeholder="Enter Your first name" required>
+        </label>
+        <label for="lName">Last Name
+            <input type="text" id="lName" placeholder="Enter your last name" required>
+        </label>
+        <label for="email">Email
+            <input type="email" id="email" placeholder="Enter Your Email" required>
+
+        </label>
+        <button type="submit">Submit</button>
+
+    </form>
+    <div id="display-area" style="margin-top: 20px; padding: 10px; border: 1px solid #ccc; display: none;">
+    <h3>Entered Data:</h3>
+    <p id="res-name"></p>
+    <p id="res-email"></p>
+</div>
+</body>
+</html>
